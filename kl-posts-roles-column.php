@@ -19,7 +19,7 @@ function kl_columns_role_content($column_name, $post_id) {
         $roles = members_get_post_roles( $post_id );
         for ($c = 0; $c < count($roles); $c++) {
             echo $roles[$c];
-            if ($c < count($roles)-2) { echo ', '; }
+            if ($c < count($roles)-1) { echo ', '; }
         }
     }
 }
